@@ -1,11 +1,5 @@
-[ignore]
+[untyped]
+.*/node_modules/react-native/Libraries/react-native/react-native-implementation.js
 
-[include]
-
-[libs]
-
-[lints]
-
-[options]
-
-[strict]
+[version]
+0.92.1
