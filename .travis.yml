@@ -1,0 +1,16 @@
+jobs:
+  include:
+    - stage: Test and lint ✅
+      cache:
+        yarn: true
+      language: node_js
+      node_js:
+        - 8
+        - 10
+      install: yarn
+      script:
+        - npm run lint
+        - npm run flow
+        - npm run test
+notifications:
+  email: false
