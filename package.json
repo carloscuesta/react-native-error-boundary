@@ -49,8 +49,8 @@
   },
   "homepage": "https://github.com/carloscuesta/react-native-error-boundary",
   "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-native": ">=0.55.0"
+    "react": ">=16.6.0",
+    "react-native": ">=0.57.7"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
