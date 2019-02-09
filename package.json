@@ -1,0 +1,64 @@
+{
+  "name": "react-native-error-boundary",
+  "version": "1.0.0",
+  "description": "A simple and reusable React-Native error boundary component",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "flow": "flow ./src",
+    "lint": "standard | snazzy",
+    "test": "jest",
+    "coverage:upload": "codecov"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscuesta/react-native-error-boundary.git"
+  },
+  "keywords": [
+    "react-native",
+    "error",
+    "error boundary",
+    "error handler",
+    "componentDidCatch"
+  ],
+  "author": "Carlos Cuesta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloscuesta/react-native-error-boundary/issues"
+  },
+  "homepage": "https://github.com/carloscuesta/react-native-error-boundary",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.55.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "codecov": "^3.1.0",
+    "eslint": "^5.13.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "flow-bin": "^0.92.1",
+    "jest": "^24.1.0",
+    "react": "16.6.3",
+    "react-native": "^0.58.4",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1"
+  }
+}
