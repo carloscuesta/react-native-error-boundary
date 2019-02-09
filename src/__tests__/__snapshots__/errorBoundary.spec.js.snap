@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary should catch errors set the state and render the default FallbackComponent 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#fafafa",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginHorizontal": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 48,
+          "fontWeight": "300",
+          "paddingBottom": 16,
+        }
+      }
+    >
+      Oops!
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+          "fontWeight": "800",
+        }
+      }
+    >
+      There's an error
+    </Text>
+    <Text
+      style={
+        Object {
+          "paddingVertical": 16,
+        }
+      }
+    >
+      Invariant Violation: Objects are not valid as a React child (found: Error: This is a test error!). If you meant to render a collection of children, use an array instead.
+    in View (created by View)
+    in View (at errorBoundary.spec.js:41)
+    in ErrorBoundary (at errorBoundary.spec.js:40)
+    </Text>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#2196f3",
+          "borderRadius": 50,
+          "opacity": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontWeight": "600",
+            "textAlign": "center",
+          }
+        }
+      >
+        Try again
+      </Text>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
+
+exports[`ErrorBoundary should catch errors set the state render the props.FallbackComponent and call props.onError 1`] = `
+<Text>
+  Error!
+</Text>
+`;
+
+exports[`ErrorBoundary should render children when there are no errors 1`] = `
+<Text>
+  Hey!
+</Text>
+`;
