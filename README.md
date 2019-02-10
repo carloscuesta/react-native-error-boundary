@@ -1,5 +1,11 @@
 # react-native-error-boundary
 
+![Travis-CI](https://img.shields.io/travis/com/carloscuesta/react-native-error-boundary.svg?style=flat-square)
+![Codecov](https://img.shields.io/codecov/c/github/carloscuesta/react-native-error-boundary.svg?style=flat-square)
+![Codeclimate](https://img.shields.io/codeclimate/maintainability/carloscuesta/react-native-error-boundary.svg?style=flat-square)
+![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)
+![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)
+
 ## Install
 
 ```bash
