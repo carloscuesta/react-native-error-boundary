@@ -6,6 +6,8 @@
 ![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)
 ![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)
 
+> A simple and reusable React-Native error boundary component 🐛
+
 ## Install
 
 ```bash
