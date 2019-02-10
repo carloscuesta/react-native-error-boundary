@@ -10,7 +10,8 @@
   "scripts": {
     "flow": "flow ./src",
     "lint": "standard | snazzy",
-    "test": "jest"
+    "test": "jest",
+    "coverage:upload": "codecov"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -54,6 +55,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "codecov": "^3.1.0",
     "eslint": "^5.13.0",
     "eslint-plugin-flowtype": "^3.2.1",
     "flow-bin": "^0.92.1",
