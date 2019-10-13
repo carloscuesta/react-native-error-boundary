@@ -2,7 +2,6 @@
 
 [![Travis Build Status](https://img.shields.io/travis/com/carloscuesta/react-native-error-boundary.svg?style=flat-square)](https://travis-ci.com/carloscuesta/react-native-error-boundary)
 [![Codecov](https://img.shields.io/codecov/c/github/carloscuesta/react-native-error-boundary.svg?style=flat-square)](https://codecov.io/gh/carloscuesta/react-native-error-boundary)
-[![Codeclimate](https://img.shields.io/codeclimate/maintainability/carloscuesta/react-native-error-boundary.svg?style=flat-square)](https://codeclimate.com/github/carloscuesta/react-native-error-boundary)
 [![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 [![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 
