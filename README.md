@@ -15,7 +15,7 @@ $ yarn add react-native-error-boundary
 
 ## Usage
 
-This component catches **JavaScript errors anywhere in their child component tree**. Native errors are not handled.
+This component catches **[JavaScript errors](https://github.com/carloscuesta/react-native-error-boundary/issues/5#issuecomment-523809153) anywhere in their child component tree**. Native errors are not handled.
 
 Using this component is really simple. First you have to import the `ErrorBoundary`
 component. Then, you have to **wrap** it **around any component** that
