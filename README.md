@@ -5,7 +5,7 @@
 [![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 [![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 
-> A simple and reusable React-Native error boundary component 🐛
+> A simple and reusable React-Native [error boundary](https://reactjs.org/docs/error-boundaries.html#introducing-error-boundaries) component 🐛
 
 ## Install
 
@@ -14,6 +14,8 @@ $ yarn add react-native-error-boundary
 ```
 
 ## Usage
+
+This component catches **[JavaScript errors](https://github.com/carloscuesta/react-native-error-boundary/issues/5#issuecomment-523809153) anywhere in their child component tree**. Native errors are not handled.
 
 Using this component is really simple. First you have to import the `ErrorBoundary`
 component. Then, you have to **wrap** it **around any component** that
