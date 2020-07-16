@@ -94,6 +94,10 @@ These are the props that the `FallbackComponent` **receives**:
 | error      | `Error`    |         | The thrown error                    |
 | resetError | `Function` |         | A function to reset the error state |
 
+## Examples
+
+- [react-native-error-boundary on Expo](https://snack.expo.io/@carloscuesta/react-native-error-boundary)
+
 ## Demo
 
 <img
