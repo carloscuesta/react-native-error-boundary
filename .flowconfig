@@ -2,4 +2,4 @@
 .*/node_modules/react-native/Libraries/react-native/react-native-implementation.js
 
 [version]
-0.129.0
+^0.130.0
