@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import {
   SafeAreaView,
   Text,
@@ -9,9 +9,9 @@ import {
 
 import styles from './styles'
 
-type Props = { error: Error, resetError: Function }
+export type Props = { error: Error, resetError: Function }
 
-const FallbackComponent = (props: Props) => (
+const FallbackComponent = (props: Props): Node => (
   <SafeAreaView style={styles.container}>
     <View style={styles.content}>
       <Text style={styles.title}>{'Oops!'}</Text>

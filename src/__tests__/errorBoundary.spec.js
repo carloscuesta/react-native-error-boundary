@@ -31,7 +31,6 @@ describe('ErrorBoundary', () => {
       </ErrorBoundary>
     )
     expect(wrapper.getInstance().state.error).toBe(null)
-    expect(wrapper.getInstance().state.hasError).toBe(false)
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -41,7 +40,8 @@ describe('ErrorBoundary', () => {
         <View>{errorMock}</View>
       </ErrorBoundary>
     )
-    expect(wrapper.getInstance().state.hasError).toBe(true)
+    expect(wrapper.getInstance().state.error).toBeInstanceOf(Error)
+    expect(wrapper.getInstance().state.error).not.toBeNull()
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -53,8 +53,8 @@ describe('ErrorBoundary', () => {
         <View>{errorMock}</View>
       </ErrorBoundary>
     )
+    expect(wrapper.getInstance().state.error).toBeInstanceOf(Error)
     expect(wrapper.getInstance().state.error).not.toBeNull()
-    expect(wrapper.getInstance().state.hasError).toBe(true)
     expect(onError).toHaveBeenCalledWith(expect.any(Error), expect.any(String))
     expect(wrapper).toMatchSnapshot()
   })
@@ -65,9 +65,8 @@ describe('ErrorBoundary', () => {
         <Text>No errors!</Text>
       </ErrorBoundary>
     )
-    wrapper.getInstance().setState({ error: errorMock, hasError: true })
+    wrapper.getInstance().setState({ error: errorMock })
     wrapper.getInstance().resetError()
     expect(wrapper.getInstance().state.error).toBeNull()
-    expect(wrapper.getInstance().state.hasError).toBe(false)
   })
 })

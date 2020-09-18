@@ -1,7 +1,7 @@
 // @flow
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+const styles: any = StyleSheet.create({
   container: {
     backgroundColor: '#fafafa',
     flex: 1,
@@ -33,3 +33,5 @@ export default StyleSheet.create({
     textAlign: 'center'
   }
 })
+
+export default styles
