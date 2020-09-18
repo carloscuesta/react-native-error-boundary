@@ -48,8 +48,8 @@ exports[`ErrorBoundary should catch errors set the state and render the default 
     >
       Invariant Violation: Objects are not valid as a React child (found: Error: This is a test error!). If you meant to render a collection of children, use an array instead.
     in View (created by View)
-    in View (at errorBoundary.spec.js:41)
-    in ErrorBoundary (at errorBoundary.spec.js:40)
+    in View (at errorBoundary.spec.js:40)
+    in ErrorBoundary (at errorBoundary.spec.js:39)
     </Text>
     <View
       accessible={true}

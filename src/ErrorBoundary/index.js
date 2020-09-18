@@ -1,25 +1,25 @@
 // @flow
 import React, { type Node, type ComponentType } from 'react'
 
-import FallbackComponent from './FallbackComponent'
+import FallbackComponent, { type Props as FallbackComponentProps } from './FallbackComponent'
 
 type Props = {
   children: Node,
-  FallbackComponent: ComponentType<any>,
+  FallbackComponent: ComponentType<FallbackComponentProps>,
   onError?: Function
 }
 
-type State = { error: Error | null, hasError: boolean }
+type State = { error: Error | null }
 
 class ErrorBoundary extends React.Component<Props, State> {
-  state = { error: null, hasError: false }
+  state: State = { error: null }
 
-  static defaultProps = {
+  static defaultProps: { FallbackComponent: ComponentType<FallbackComponentProps> } = {
     FallbackComponent: FallbackComponent
   }
 
-  static getDerivedStateFromError (error: Error) {
-    return { error, hasError: true }
+  static getDerivedStateFromError (error: Error): State {
+    return { error }
   }
 
   componentDidCatch (error: Error, info: { componentStack: string }) {
@@ -29,13 +29,13 @@ class ErrorBoundary extends React.Component<Props, State> {
   }
 
   resetError: Function = () => {
-    this.setState({ error: null, hasError: false })
+    this.setState({ error: null })
   }
 
-  render () {
+  render (): Node {
     const { FallbackComponent } = this.props
 
-    return this.state.hasError
+    return this.state.error
       ? <FallbackComponent
         error={this.state.error}
         resetError={this.resetError}
