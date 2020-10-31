@@ -64,6 +64,6 @@
     "react-native": "^0.58.4",
     "react-test-renderer": "^16.8.1",
     "snazzy": "^9.0.0",
-    "standard": "^12.0.1"
+    "standard": "^16.0.0"
   }
 }
