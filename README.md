@@ -1,6 +1,6 @@
 # react-native-error-boundary
 
-[![Travis Build Status](https://img.shields.io/travis/com/carloscuesta/react-native-error-boundary/master?style=flat-square)](https://travis-ci.com/carloscuesta/react-native-error-boundary)
+[![Build Status](https://img.shields.io/github/workflow/status/carloscuesta/react-native-error-boundary/CI?style=flat-square)](https://github.com/carloscuesta/react-native-error-boundary/actions?query=workflow%3ACI+branch%3Amaster)
 [![Codecov](https://img.shields.io/codecov/c/github/carloscuesta/react-native-error-boundary.svg?style=flat-square)](https://codecov.io/gh/carloscuesta/react-native-error-boundary)
 [![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 [![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
