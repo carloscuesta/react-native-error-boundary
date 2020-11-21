@@ -105,3 +105,7 @@ These are the props that the `FallbackComponent` **receives**:
   alt='react-native-error-boundary'
   width='358px'
 />
+
+## FAQ
+
+- [Why choose `react-native-error-boundary` over `react-error-boundary`?](FAQ.md#why-choose-react-native-error-boundary-over-react-error-boundary)
