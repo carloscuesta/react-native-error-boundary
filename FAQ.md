@@ -6,6 +6,10 @@ The main difference is that `react-native-error-boundary` targets React Native. 
 
 At the end of the day, you should pick the option you prefer based on your needs and on the API that each library provides.
 
-## Why I see a red error screen on development ?
+## Why I see a red error screen on development?
 
 If you see a red error error screen while you're on Development, that's normal. It's the way `react-native` showcases you the error you've got. To see the `ErrorBoundary` component just dismiss the screen or press the `Esc` key.
+
+## How do I test the ErrorBoundary component on development?
+
+That's a piece of cake :cake!. Follow the [Expo example](https://snack.expo.io/@carloscuesta/react-native-error-boundary) that is provided [on the repository](https://github.com/carloscuesta/react-native-error-boundary#examples).
