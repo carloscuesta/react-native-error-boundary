@@ -12,4 +12,4 @@ If you see a red error error screen while you're on Development, that's normal. 
 
 ## How do I test the ErrorBoundary component on development?
 
-That's a piece of cake :cake!. Follow the [Expo example](https://snack.expo.io/@carloscuesta/react-native-error-boundary) that is provided [on the repository](https://github.com/carloscuesta/react-native-error-boundary#examples).
+That's a piece of cake :cake:! Follow the [Expo example](https://snack.expo.io/@carloscuesta/react-native-error-boundary) that is provided [on the repository](https://github.com/carloscuesta/react-native-error-boundary#examples).
