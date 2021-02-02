@@ -63,10 +63,10 @@
     "eslint": "^7.5.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "flow-bin": "^0.143.0",
-    "jest": "^24.9.0",
-    "react": "16.6.3",
-    "react-native": "^0.58.4",
-    "react-test-renderer": "^16.8.1",
+    "jest": "^26.6.3",
+    "react": "^17.0.1",
+    "react-native": "^0.63.4",
+    "react-test-renderer": "^17.0.1",
     "snazzy": "^9.0.0",
     "standard": "^16.0.0"
   }
