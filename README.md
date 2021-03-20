@@ -101,9 +101,9 @@ These are the props that the `FallbackComponent` **receives**:
 ## Demo
 
 <img
-  src='https://user-images.githubusercontent.com/7629661/52532748-d8758400-2d29-11e9-80a0-15182517271c.gif'
+  src='https://user-images.githubusercontent.com/7629661/111866027-bc158e00-896a-11eb-8140-cfdc5d19527c.gif'
   alt='react-native-error-boundary'
-  width='358px'
+  width='354px'
 />
 
 ## FAQ
