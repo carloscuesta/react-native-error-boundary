@@ -13,11 +13,13 @@ const styles: any = StyleSheet.create({
   title: {
     fontSize: 48,
     fontWeight: '300',
-    paddingBottom: 16
+    paddingBottom: 16,
+    color: '#000'
   },
   subtitle: {
     fontSize: 32,
-    fontWeight: '800'
+    fontWeight: '800',
+    color: '#000'
   },
   error: {
     paddingVertical: 16
