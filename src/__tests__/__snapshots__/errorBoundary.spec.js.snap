@@ -33,6 +33,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     <Text
       style={
         Object {
+          "color": "#000",
           "fontSize": 48,
           "fontWeight": "300",
           "paddingBottom": 16,
@@ -44,6 +45,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     <Text
       style={
         Object {
+          "color": "#000",
           "fontSize": 32,
           "fontWeight": "800",
         }
