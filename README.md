@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-$ yarn add react-native-error-boundary
+yarn add react-native-error-boundary
 ```
 
 ## Usage
