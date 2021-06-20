@@ -69,5 +69,8 @@
     "react-test-renderer": "^17.0.1",
     "snazzy": "^9.0.0",
     "standard": "^16.0.0"
+  },
+  "resolutions": {
+    "react-native/@jest/create-cache-key-function": "^27.0.2"
   }
 }
