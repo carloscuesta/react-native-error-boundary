@@ -108,6 +108,8 @@ These are the props that the `FallbackComponent` **receives**:
 
 ## FAQ
 
+- [Why do you need error boundaries?](FAQ.md#why-do-you-need-error-boundaries)
+
 - [Why choose `react-native-error-boundary` over `react-error-boundary`?](FAQ.md#why-choose-react-native-error-boundary-over-react-error-boundary)
 
 - [Why I see a red error screen on development?](FAQ.md#why-i-see-a-red-error-screen-on-development)
