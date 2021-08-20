@@ -1,5 +1,11 @@
 # FAQ
 
+## Why do you need error boundaries?
+
+As of **React 16**, errors that were **not caught** by any **error boundary** will **result** in **unmounting** of the **whole** React **component tree** 😱.
+
+[Read more about the dangers](https://carloscuesta.me/blog/managing-react-native-crashes-with-error-boundaries#why-you-should-use-them-) of this.
+
 ## Why choose `react-native-error-boundary` over [`react-error-boundary`](https://github.com/bvaughn/react-error-boundary)?
 
 The main difference is that `react-native-error-boundary` targets React Native. It provides a default `FallbackComponent` that uses React Native components underneath, so this is **not compatible with React** on the web. Additionally, the API for `react-error-boundary` is somewhat different, having many more options than `react-native-error-boundary` while also seemingly being compatible with React Native.
