@@ -1,5 +1,4 @@
 // @flow
-/* eslint-disable react/jsx-handler-names */
 import React, { type Node } from 'react'
 import {
   SafeAreaView,
