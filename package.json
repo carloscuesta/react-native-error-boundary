@@ -62,11 +62,8 @@
     "flow-bin": "^0.164.0",
     "jest": "^27.0.4",
     "react": "^17.0.1",
-    "react-native": "^0.64.0",
+    "react-native": "^0.66.3",
     "react-test-renderer": "^17.0.1"
-  },
-  "resolutions": {
-    "react-native/@jest/create-cache-key-function": "^27.0.2"
   },
   "dependencies": {},
   "eslintConfig": {

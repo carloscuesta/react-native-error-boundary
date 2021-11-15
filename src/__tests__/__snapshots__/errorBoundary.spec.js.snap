@@ -64,7 +64,9 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     </Text>
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
