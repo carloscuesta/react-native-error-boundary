@@ -9,18 +9,8 @@
   ],
   "scripts": {
     "flow": "flow ./src",
-    "lint": "standard | snazzy",
     "test": "jest",
     "coverage:upload": "codecov"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
-    ],
-    "env": [
-      "jest"
-    ]
   },
   "jest": {
     "preset": "react-native",
@@ -58,17 +48,13 @@
     "react-native": ">=0.57.7"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
     "codecov": "^3.1.0",
-    "eslint": "^7.5.0",
-    "eslint-plugin-flowtype": "^7.0.0",
     "flow-bin": "^0.164.0",
     "jest": "^27.0.4",
     "react": "^17.0.1",
     "react-native": "^0.64.0",
     "react-test-renderer": "^17.0.1",
-    "snazzy": "^9.0.0",
-    "standard": "^16.0.0"
+    "snazzy": "^9.0.0"
   },
   "resolutions": {
     "react-native/@jest/create-cache-key-function": "^27.0.2"
