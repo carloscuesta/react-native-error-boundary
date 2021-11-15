@@ -1,7 +1,9 @@
 // @flow
 import React, { type Node, type ComponentType } from 'react'
 
-import FallbackComponent, { type Props as FallbackComponentProps } from './FallbackComponent'
+import FallbackComponent, {
+  type Props as FallbackComponentProps
+} from './FallbackComponent'
 
 type Props = {
   children: Node,
