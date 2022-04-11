@@ -60,7 +60,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
         }
       }
     >
-      Error: Objects are not valid as a React child (found: Error: This is a test error!). If you meant to render a collection of children, use an array instead.
+      Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.
     </Text>
     <View
       accessible={true}
