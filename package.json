@@ -61,7 +61,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "flow-bin": "^0.178.0",
     "jest": "^27.0.4",
-    "metro-babel-register": "^0.70.1",
+    "metro-babel-register": "^0.71.0",
     "react": "^18.0.0",
     "react-native": "^0.68.0",
     "react-test-renderer": "^18.0.0"
