@@ -3,3 +3,4 @@
 
 [untyped]
 .*/node_modules/react-native/Libraries/react-native/react-native-implementation.js
+.*/node_modules/react-native/Libraries/StyleSheet/StyleSheetTypes.js
