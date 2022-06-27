@@ -18,10 +18,7 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.js"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-    }
+    ]
   },
   "repository": {
     "type": "git",
