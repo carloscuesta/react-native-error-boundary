@@ -6100,9 +6100,9 @@ react-native-gradle-plugin@^0.0.7:
   integrity sha512-+4JpbIx42zGTONhBTIXSyfyHICHC29VTvhkkoUOJAh/XHPEixpuBduYgf6Y4y9wsN1ARlQhBBoptTvXvAFQf5g==
 
 react-native@^0.69.0:
-  version "0.69.2"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.2.tgz#a554cc97700270a51af10bc4bbff73f1ba296617"
-  integrity sha512-9CdnnAtGYokbBJRFr2VesAOO+BODptpsrwGk2yunHmDM7zHymFeFW1eUS6zDbnxO6yOVgdt7fi7czlkTJrJkuw==
+  version "0.69.3"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.3.tgz#8fc7afe0a302294262a6b49ba2089483db734c05"
+  integrity sha512-SyGkcoEUa/BkO+wKVnv4OsnLSNfUM5zLNXS3iT/3eXjKX91/FKBH/nfR9BE1c60X5LQe/P5QYqr6WPX3TRSQkA==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^8.0.3"
