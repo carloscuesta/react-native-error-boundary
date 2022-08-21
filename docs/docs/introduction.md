@@ -1,5 +1,4 @@
 ---
-id: introduction
 title: Introduction
 description: React 16 introduced a new concept called Error Boundaries. Boundaries introduce a new way to catch JavaScript errors 🐛 in a React project.
 slug: /

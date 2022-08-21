@@ -1,5 +1,4 @@
 ---
-id: installation
 title: Installation
 description: Install react-native-error-boundary using your favorite package manager.
 keywords: [react-native-error-boundary, installation]
