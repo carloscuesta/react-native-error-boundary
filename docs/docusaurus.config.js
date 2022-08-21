@@ -10,7 +10,6 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -37,10 +36,6 @@ const config = {
       colorMode: { respectPrefersColorScheme: true },
       navbar: {
         title: 'react-native-error-boundary',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {
             href: 'https://github.com/carloscuesta/react-native-error-boundary',
