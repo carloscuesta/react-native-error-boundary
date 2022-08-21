@@ -1,4 +1,4 @@
-const lightCodeTheme = require('prism-react-renderer/themes/oceanicNext');
+const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 const { npm2yarn2pnpm } = require('@sapphire/docusaurus-plugin-npm2yarn2pnpm');
 
@@ -35,7 +35,11 @@ const config = {
     ({
       colorMode: { respectPrefersColorScheme: true },
       navbar: {
-        title: 'react-native-error-boundary',
+        title: 'React Native Error Boundary',
+        logo: {
+          alt: 'React Native Error Boundary',
+          src: 'images/logo.svg',
+        },
         items: [
           {
             href: 'https://github.com/carloscuesta/react-native-error-boundary',
