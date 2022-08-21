@@ -1,5 +1,5 @@
 ---
-title: Logging errors
+title: Logging Errors
 slug: /usage/logging-errors
 sidebar_position: 2
 ---

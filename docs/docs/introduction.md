@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## Why do you need error boundaries?
 
-As of [React 16](https://reactjs.org/docs/error-boundaries.html#new-behavior-for-uncaught-errors) 📘, errors that were not caught by any error boundary will result in unmounting of the whole React component tree 😱
+Errors that are not caught by any error boundary will result in unmounting of the whole React component tree 😱
 
 ## The problem
 

@@ -1,5 +1,5 @@
 ---
-title: Rendering a custom fallback component
+title: Rendering a Fallback Component
 slug: /usage/rendering-a-custom-fallback-ui
 sidebar_position: 3
 ---
