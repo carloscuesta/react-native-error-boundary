@@ -3,6 +3,7 @@ title: Rendering a custom fallback component
 slug: /usage/rendering-a-custom-fallback-ui
 sidebar_position: 3
 ---
+import ExpoSnack from '../../src/components/ExpoSnack';
 
 You can **customise** the screen showed to the user once an error happens with the `FallbackComponent` property.
 
@@ -31,3 +32,7 @@ const App = () => (
 ```
 
 When using this property, you're in fully in control over the error experience for the users.
+
+# Demo
+
+<ExpoSnack id="@carloscuesta/react-native-error-boundary-fallbackcomponent" />

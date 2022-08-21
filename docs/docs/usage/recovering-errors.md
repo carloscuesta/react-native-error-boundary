@@ -3,6 +3,7 @@ title: Recovering Errors
 slug: /usage/recovering-errors
 sidebar_position: 1
 ---
+import ExpoSnack from '../../src/components/ExpoSnack';
 
 Import the `ErrorBoundary` component:
 
@@ -21,3 +22,7 @@ const App = () => (
 ```
 
 If any of the children of the `ErrorBoundary` throws an error, a fallback screen will be rendered, to communicate the user that an error happened.
+
+# Demo
+
+<ExpoSnack id="@carloscuesta/react-native-error-boundary" />
