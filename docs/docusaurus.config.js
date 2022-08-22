@@ -7,7 +7,7 @@ const config = {
   title: 'react-native-error-boundary',
   tagline: 'A simple and reusable React-Native error boundary component 🐛',
   url: 'https://your-docusaurus-test-site.com',
-  favicon: '/images/logo.svg',
+  favicon: '/images/logo.ico',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

@@ -13,90 +13,70 @@
 yarn add react-native-error-boundary
 ```
 
-## Usage
+## Documentation
 
-This component catches **[JavaScript errors](https://github.com/carloscuesta/react-native-error-boundary/issues/5#issuecomment-523809153) anywhere in their child component tree**. Native errors are not handled.
-
-Using this component is really simple. First you have to import the `ErrorBoundary`
-component. Then, you have to **wrap** it **around any component** that
-**could throw** an **error**.
-
-### Basic
-
-```jsx
-import ErrorBoundary from 'react-native-error-boundary'
-
-const App = () => (
-  <ErrorBoundary>
-    <ChildrenThatCouldThrowEror />
-  </ErrorBoundary>
-)
-```
-
-### Logging errors
-
-You can **log the error** by providing an `onError` function to the component.
-
-```jsx
-import ErrorBoundary from 'react-native-error-boundary'
-
-const errorHandler = (error: Error, stackTrace: string) => {
-  /* Log the error to an error reporting service */
-}
-
-const App = () => (
-  <ErrorBoundary onError={errorHandler}>
-    <ChildrenThatCouldThrowEror />
-  </ErrorBoundary>
-)
-```
-
-### Custom fallback component
-
-You can customize the appearance of the fallback component by providing the `FallbackComponent` prop.
-
-```jsx
-import ErrorBoundary from 'react-native-error-boundary'
-
-const CustomFallback = (props: { error: Error, resetError: Function }) => (
-  <View>
-    <Text>Something happened!</Text>
-    <Text>{props.error.toString()}</Text>
-    <Button onPress={props.resetError} title={'Try again'} />
-  </View>
-)
-
-const App = () => (
-  <ErrorBoundary FallbackComponent={CustomFallback}>
-    <ChildrenThatCouldThrowEror></ChildrenThatCouldThrowEror>
-  </ErrorBoundary>
-)
-```
+- [Installation](https://react-native-error-boundary.js.org/install)
+- [Usage](https://react-native-error-boundary.js.org/usage/recovering-errors)
+  - [Recovering Errors](https://react-native-error-boundary.js.org/usage/recovering-errors)
+  - [Logging Errors](https://react-native-error-boundary.js.org/usage/logging-errors)
+  - [Rendering a Fallback Component](https://react-native-error-boundary.js.org/usage/rendering-a-custom-fallback-ui)
+- [API](https://react-native-error-boundary.js.org/api/errorboundary)
+  - [`ErrorBoundary`](https://react-native-error-boundary.js.org/api/errorboundary)
+  - [`FallbackComponent`](https://react-native-error-boundary.js.org/api/fallbackcomponent)
+- [FAQ](https://react-native-error-boundary.js.org/faq)
 
 ## API
 
-### `ErrorBoundary`
+### [`ErrorBoundary`](https://react-native-error-boundary.js.org/api/errorboundary)
 
-These are the props that the `ErrorBoundary` component accepts:
+These are the props that you can pass to the `ErrorBoundary` component:
 
-| Property          | Type              | Required | Default             | Description                        |
-|-------------------|-------------------|----------|---------------------|------------------------------------|
-| children          | `React.Children`  | `true`   |                     | Components that may throw an error |
-| FallbackComponent | `React.Component` | `false`  | `FallbackComponent` | UI rendered when there's an error  |
-| onError           | `Function`        | `false`  |                     | Function for logging the error     |
+| Property            | Type              | Required | Default             |
+|---------------------|-------------------|----------|---------------------|
+| `Children`          | `React.Children`  | `true`   |                     |
+| `FallbackComponent` | `React.Component` | `false`  | `FallbackComponent` |
+| `onError`           | `Function`        | `false`  |                     |
 
-### `FallbackComponent`
+#### `Children`
 
-These are the props that the `FallbackComponent` **receives**:
+Any children that can throw an error. 
 
-| Property   | Type       | Default | Description                         |
-|------------|------------|---------|-------------------------------------|
-| error      | `Error`    |         | The thrown error                    |
-| resetError | `Function` |         | A function to reset the error state |
+#### [`FallbackComponent`](https://react-native-error-boundary.js.org/api/fallbackcomponent)
 
-## Examples
+The fallback component that will be rendered after catching an error.
+By default the library comes with a built-in component.
 
-- [react-native-error-boundary on Expo](https://snack.expo.io/@carloscuesta/react-native-error-boundary)
+#### `onError`
+
+A function that receives two arguments:
+
+- `error`: The error catched by the component.
+- `stackTrace`: The stacktrace of the error.
+
+```js
+onError(error: Error, stackTrace: string): void
+```
+
+### [`FallbackComponent`](https://react-native-error-boundary.js.org/api/fallbackcomponent)
+
+These are the props that the `FallbackComponent` receives:
+
+| Property   | Type       | Default |
+|------------|------------|---------|
+| error      | `Error`    |         |
+| resetError | `Function` |         |
+
+#### `error`
+
+The error object.
+
+#### `resetError`
+
+A function to reset the error state. You'll want to call this function to recover from the error state.
+
+```js
+resetError(): void
+```
 
 ## Demo
 
@@ -105,13 +85,3 @@ These are the props that the `FallbackComponent` **receives**:
   alt='react-native-error-boundary'
   width='354px'
 />
-
-## FAQ
-
-- [Why do you need error boundaries?](FAQ.md#why-do-you-need-error-boundaries)
-
-- [Why choose `react-native-error-boundary` over `react-error-boundary`?](FAQ.md#why-choose-react-native-error-boundary-over-react-error-boundary)
-
-- [Why I see a red error screen on development?](FAQ.md#why-i-see-a-red-error-screen-on-development)
-
-- [How do I test the ErrorBoundary component on development?](FAQ.md#how-do-i-test-the-errorboundary-component-on-development)
