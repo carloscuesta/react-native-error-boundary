@@ -16,7 +16,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={
-    Object {
+    {
       "backgroundColor": "#fafafa",
       "flex": 1,
       "justifyContent": "center",
@@ -25,14 +25,14 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
 >
   <View
     style={
-      Object {
+      {
         "marginHorizontal": 16,
       }
     }
   >
     <Text
       style={
-        Object {
+        {
           "color": "#000",
           "fontSize": 48,
           "fontWeight": "300",
@@ -44,7 +44,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     </Text>
     <Text
       style={
-        Object {
+        {
           "color": "#000",
           "fontSize": 32,
           "fontWeight": "800",
@@ -55,7 +55,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     </Text>
     <Text
       style={
-        Object {
+        {
           "paddingVertical": 16,
         }
       }
@@ -74,7 +74,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "backgroundColor": "#2196f3",
           "borderRadius": 50,
           "opacity": 1,
@@ -84,7 +84,7 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
     >
       <Text
         style={
-          Object {
+          {
             "color": "#fff",
             "fontWeight": "600",
             "textAlign": "center",
