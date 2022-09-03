@@ -28,6 +28,10 @@ const config = {
         },
         blog: false,
         theme: { customCss: require.resolve('./src/theme/theme.css') },
+        gtag: {
+          trackingID: 'G-TYCHT7C3PQ',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
