@@ -20,7 +20,7 @@ const errorHandler = (error: Error, stackTrace: string) => {
 }
 
 const App = () => (
-  <ErrorBoundary>
+  <ErrorBoundary onError={errorHandler}>
     <ChildrenThatCouldThrowEror />
   </ErrorBoundary>
 )
