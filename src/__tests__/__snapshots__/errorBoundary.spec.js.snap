@@ -14,7 +14,6 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is defined 
 
 exports[`ErrorBoundary when there is an error when FallbackComponent is not defined as a prop should catch the error and render the default FallbackComponent 1`] = `
 <RCTSafeAreaView
-  emulateUnlessSupported={true}
   style={
     {
       "backgroundColor": "#fafafa",
