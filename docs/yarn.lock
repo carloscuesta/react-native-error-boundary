@@ -138,11 +138,6 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@armano/npm-to-yarn@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@armano/npm-to-yarn/-/npm-to-yarn-1.1.3.tgz#b92c782af83fdab076ad63ba02fc391e309f7300"
-  integrity sha512-qe3OXj/GivgkRcFZ2KQFDYfPW+qwOWvNXwIrw4u7g+R8WPmc8LzfV5NiEE8bxrIirD1A0oYerNsdyB9RrK1Ysw==
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.8.3":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1725,12 +1720,11 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@sapphire/docusaurus-plugin-npm2yarn2pnpm@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/docusaurus-plugin-npm2yarn2pnpm/-/docusaurus-plugin-npm2yarn2pnpm-1.1.3.tgz#1909958dd0c0f7868ba29f9dbd3f1fc42d1511fa"
-  integrity sha512-wbTVwK3xGSD4Zu1gxHH86/XJ0HzI+jp8cB1g8Lh9+pqWN7uv3OnNwoCo/qGUBl6in5OvTVocq/lyq7Mwcrv+Eg==
+"@sapphire/docusaurus-plugin-npm2yarn2pnpm@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/docusaurus-plugin-npm2yarn2pnpm/-/docusaurus-plugin-npm2yarn2pnpm-1.1.4.tgz#0862464f26a589c30d93bb7d4eb19c70784e5919"
+  integrity sha512-wws6XT8tqKYi7quonI6AXq6dxYU00E5flT+nWnss0/0+4OKiv9xAdwNavEOKre7TS9lCin/qPAYt3EN4iMReuQ==
   dependencies:
-    "@armano/npm-to-yarn" "^1.1.3"
     unist-util-visit "^2.0.3"
 
 "@sideway/address@^4.1.3":
