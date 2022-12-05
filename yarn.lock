@@ -5210,9 +5210,9 @@ merge2@^1.3.0, merge2@^1.4.1:
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
 metro-babel-register@^0.73.1:
-  version "0.73.3"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.73.3.tgz#fc5601bbe166efb59d063d8b330de062475c257b"
-  integrity sha512-uuNoggz/tr5FrG5lbzMHMO5wN0L3BZi/AYC/8oPTbiIJEavZ5ugVaePOoTU04c67KMGgNLIbJESZpLZn/ttN7A==
+  version "0.73.4"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.73.4.tgz#f61ea616729f68bdb119338da35ac9d0f6ee05c4"
+  integrity sha512-/eJJJ4+0jyaImUp3lJ33yrVRa/w9x8/KeSi0fJzvcIjUX6frje6fETprAiJK50uRWaGptsVc9AmMs3474yc6ZQ==
   dependencies:
     "@babel/core" "^7.14.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
