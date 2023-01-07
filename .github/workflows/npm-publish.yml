@@ -13,6 +13,8 @@ jobs:
         node-version: '16'
     - name: Install dependencies 📦
       run: yarn
+    - name: Build 👷‍♂️
+      run: yarn run build
     - name: Publish package to NPM 🚀
       env:
         NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
