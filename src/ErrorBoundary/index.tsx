@@ -1,14 +1,13 @@
-// @flow
-import React, { type Node, type ComponentType } from 'react'
+import React, { type ComponentType, type ReactNode } from 'react'
 
 import FallbackComponent, {
   type Props as FallbackComponentProps
 } from './FallbackComponent'
 
 type Props = {
-  children: Node,
+  children: ReactNode,
   FallbackComponent: ComponentType<FallbackComponentProps>,
-  onError?: Function
+  onError?: (error: Error, stackTrace: string) => void
 }
 
 type State = { error: Error | null }
@@ -26,15 +25,15 @@ class ErrorBoundary extends React.Component<Props, State> {
 
   componentDidCatch (error: Error, info: { componentStack: string }) {
     if (typeof this.props.onError === 'function') {
-      this.props.onError.call(this, error, info.componentStack)
+      this.props.onError(error, info.componentStack)
     }
   }
 
-  resetError: Function = () => {
+  resetError: () => void = () => {
     this.setState({ error: null })
   }
 
-  render (): Node {
+  render () {
     const { FallbackComponent } = this.props
 
     return this.state.error
