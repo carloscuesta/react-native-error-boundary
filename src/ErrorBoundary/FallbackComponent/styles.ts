@@ -1,7 +1,6 @@
-// @flow
 import { StyleSheet } from 'react-native'
 
-const styles: any = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fafafa',
     flex: 1,
