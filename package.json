@@ -17,7 +17,7 @@
     "preset": "react-native",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.js"
+      "src/**/*.(ts|tsx)"
     ]
   },
   "repository": {
