@@ -4,6 +4,7 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "baseUrl": "./",
+    "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importsNotUsedAsValues": "error",
@@ -18,15 +19,20 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "lib",
     "paths": {
       "react-native-error-boundary": ["./src/index"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
     "target": "esnext"
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "src/__tests__"
   ]
 }

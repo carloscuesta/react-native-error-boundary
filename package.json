@@ -2,12 +2,14 @@
   "name": "react-native-error-boundary",
   "version": "1.1.17",
   "description": "A simple and reusable React-Native error boundary component",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
     "src",
+    "lib",
     "README.md"
   ],
   "scripts": {
+    "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src",
     "test": "jest",
@@ -18,6 +20,9 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.(ts|tsx)"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib"
     ]
   },
   "repository": {
