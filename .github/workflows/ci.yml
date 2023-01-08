@@ -20,8 +20,8 @@ jobs:
       run: yarn
     - name: Lint 🎨
       run: yarn run lint
-    - name: Flow types 🏷
-      run: yarn run flow
+    - name: Type check 🏷
+      run: yarn run typecheck
     - name: Tests ✅
       run: yarn run test
     - name: Upload coverage 📈

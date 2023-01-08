@@ -1,16 +1,23 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import renderer from 'react-test-renderer'
+import renderer, { ReactTestInstance } from 'react-test-renderer'
 
 import moduleIndex from '../index'
 import ErrorBoundary from '../ErrorBoundary'
 
 describe('ErrorBoundary', () => {
-  let consoleErrorSpy
-  let errorMock
+  let consoleErrorSpy: jest.SpyInstance
+  let errorMock: Error
+
+  const ComponentWithError = (props: { error: Error }) => (
+    <View>
+      {/*  @ts-expect-error - We are rendering an error to trigger the ErrorBoundary component, even though it's not a valid React children. */}
+      {props.error}
+    </View>
+  )
 
   beforeAll(() => {
-    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(jest.fn())
     errorMock = new Error('This is a test error!')
   })
 
@@ -41,7 +48,7 @@ describe('ErrorBoundary', () => {
       it('should catch the error and render the default FallbackComponent', () => {
         const wrapper = renderer.create(
           <ErrorBoundary>
-            <View>{errorMock}</View>
+            <ComponentWithError error={errorMock} />
           </ErrorBoundary>
         )
 
@@ -54,7 +61,7 @@ describe('ErrorBoundary', () => {
         const FallbackComponent = () => <Text>Error!</Text>
         const wrapper = renderer.create(
           <ErrorBoundary FallbackComponent={FallbackComponent}>
-            <View>{errorMock}</View>
+            <ComponentWithError error={errorMock} />
           </ErrorBoundary>
         )
 
@@ -68,7 +75,7 @@ describe('ErrorBoundary', () => {
 
         renderer.create(
           <ErrorBoundary onError={onError}>
-            <View>{errorMock}</View>
+            <ComponentWithError error={errorMock} />
           </ErrorBoundary>
         )
 
@@ -84,10 +91,12 @@ describe('ErrorBoundary', () => {
           </ErrorBoundary>
         )
 
-        wrapper.getInstance().setState({ error: errorMock })
-        wrapper.getInstance().resetError()
+        const instance = wrapper.getInstance() as ReactTestInstance['instance']
 
-        expect(wrapper.getInstance().state.error).toBeNull()
+        instance.setState({ error: errorMock })
+        instance.resetError()
+
+        expect(instance.state.error).toBeNull()
       })
     })
   })
