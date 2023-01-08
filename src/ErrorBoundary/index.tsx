@@ -1,11 +1,11 @@
-import React, { type ComponentType, type ReactNode } from 'react'
+import React, { type ComponentType } from 'react'
 
 import FallbackComponent, {
   type Props as FallbackComponentProps
 } from './FallbackComponent'
 
-type Props = {
-  children: ReactNode,
+export type Props = {
+  children: JSX.Element,
   FallbackComponent: ComponentType<FallbackComponentProps>,
   onError?: (error: Error, stackTrace: string) => void
 }
