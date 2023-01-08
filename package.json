@@ -61,7 +61,6 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.18.2",
-    "@babel/preset-react": "^7.16.0",
     "@types/jest": "^29.2.5",
     "@types/react-native": "^0.70.8",
     "@types/react-test-renderer": "^18.0.0",
