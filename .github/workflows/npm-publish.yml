@@ -21,8 +21,13 @@ jobs:
       run: |
         npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
         npm publish
+    - name: Get branch names 🌳
+      id: branch-name
+      uses: tj-actions/branch-names@v6
+      with:
+        strip_tag_prefix: 'v'
     - name: Publish GitHub Release 📝
       uses: softprops/action-gh-release@v1
       with:
-        name: ${{github.ref_name}}
+        name: ${{steps.branch-name.outputs.tag}}
         generate_release_notes: true
