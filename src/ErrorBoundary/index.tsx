@@ -5,7 +5,7 @@ import FallbackComponent, {
 } from './FallbackComponent'
 
 export type Props = {
-  children: Exclude<React.ReactNode, number | string | boolean| null | undefined>,
+  children: Exclude<React.ReactNode, number | string | boolean | null | undefined>,
   FallbackComponent: ComponentType<FallbackComponentProps>,
   onError?: (error: Error, stackTrace: string) => void
 }
