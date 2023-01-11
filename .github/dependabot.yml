@@ -6,15 +6,8 @@ updates:
       interval: weekly
       time: "04:00"
     open-pull-requests-limit: 10
-  - package-ecosystem: npm
-    directory: "/docs"
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
       time: "04:00"
-    open-pull-requests-limit: 10
-    
-    - package-ecosystem: "github-actions"
-      directory: "/"
-      schedule:
-        interval: monthly
-        time: "04:00"
