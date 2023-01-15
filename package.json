@@ -15,7 +15,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src && prettier --check ./src",
     "test": "jest",
-    "coverage:upload": "codecov"
+    "coverage:upload": "codecov",
+    "prepare": "husky install"
   },
   "jest": {
     "preset": "react-native",
@@ -124,5 +125,8 @@
     "semi": false,
     "singleQuote": true,
     "arrowParens": "always"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
