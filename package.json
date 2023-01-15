@@ -118,5 +118,10 @@
         "react-native"
       ]
     }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "always"
   }
 }
