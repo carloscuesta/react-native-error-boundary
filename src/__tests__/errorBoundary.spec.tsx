@@ -79,7 +79,10 @@ describe('ErrorBoundary', () => {
           </ErrorBoundary>
         )
 
-        expect(onError).toHaveBeenCalledWith(expect.any(Error), expect.any(String))
+        expect(onError).toHaveBeenCalledWith(
+          expect.any(Error),
+          expect.any(String)
+        )
       })
     })
 
