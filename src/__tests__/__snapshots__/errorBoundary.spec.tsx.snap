@@ -62,6 +62,23 @@ exports[`ErrorBoundary when there is an error when FallbackComponent is not defi
       Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.
     </Text>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
