@@ -38,6 +38,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: 'L5CKIX558D',
+        apiKey: 'da22f908fd4a414a5552862d24948b06',
+        indexName: 'react-native-error-boundary'
+      },
       colorMode: { respectPrefersColorScheme: true },
       navbar: {
         title: 'React Native Error Boundary',
