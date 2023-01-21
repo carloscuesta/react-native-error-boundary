@@ -26,6 +26,10 @@
     ],
     "modulePathIgnorePatterns": [
       "<rootDir>/lib"
+    ],
+    "reporters": [
+      "default",
+      "github-actions"
     ]
   },
   "repository": {
