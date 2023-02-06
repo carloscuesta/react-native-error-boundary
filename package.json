@@ -67,7 +67,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.18.2",
     "@types/jest": "^29.4.0",
-    "@types/react-native": "^0.71.1",
+    "@types/react-native": "^0.71.2",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
@@ -84,7 +84,7 @@
     "metro-babel-register": "^0.74.0",
     "prettier": "^2.8.3",
     "react": "^18.0.0",
-    "react-native": "^0.71.0",
+    "react-native": "^0.71.2",
     "react-test-renderer": "^18.0.0",
     "typescript": "^4.9.5"
   },
