@@ -70,7 +70,7 @@
     "@types/react-native": "^0.71.1",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "codecov": "^3.1.0",
     "eslint": "^8.33.0",
     "eslint-import-resolver-typescript": "^3.5.2",
