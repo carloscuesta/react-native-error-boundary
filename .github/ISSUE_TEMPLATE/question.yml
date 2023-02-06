@@ -21,6 +21,8 @@ body:
       options:
         - label: Follow our [Code of Conduct](https://github.com/carloscuesta/.github/blob/main/CODE_OF_CONDUCT.md)
           required: true
+        - label: Read the [FAQ](https://react-native-error-boundary.js.org/faq)
+          required: true
         - label: Read the [Contributing Guide](https://github.com/carloscuesta/react-native-error-boundary/blob/master/.github/CONTRIBUTING.md).
           required: true
         - label: Check that there isn't [already an issue](https://github.com/carloscuesta/react-native-error-boundary/issues?q=is%3Aissue) asking the same question.
