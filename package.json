@@ -67,7 +67,6 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.18.2",
     "@types/jest": "^29.4.0",
-    "@types/react-native": "^0.71.2",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.52.0",
