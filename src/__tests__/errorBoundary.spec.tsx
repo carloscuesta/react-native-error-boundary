@@ -1,24 +1,23 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import renderer, { ReactTestInstance } from 'react-test-renderer'
+import { render, screen, fireEvent } from '@testing-library/react-native'
+import '@testing-library/jest-native'
 
 import moduleIndex from '../index'
 import ErrorBoundary from '../ErrorBoundary'
 
 describe('ErrorBoundary', () => {
   let consoleErrorSpy: jest.SpyInstance
-  let errorMock: Error
 
-  const ComponentWithError = (props: { error: Error }) => (
+  const ComponentWithError = () => (
     <View>
       {/*  @ts-expect-error - We are rendering an error to trigger the ErrorBoundary component, even though it's not a valid React children. */}
-      {props.error}
+      {new Error('This is a test error!')}
     </View>
   )
 
   beforeAll(() => {
     consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(jest.fn())
-    errorMock = new Error('This is a test error!')
   })
 
   afterAll(() => {
@@ -33,39 +32,46 @@ describe('ErrorBoundary', () => {
 
   describe('when there are no errors', () => {
     it('should render the children', () => {
-      const wrapper = renderer.create(
+      const screen = render(
         <ErrorBoundary>
           <Text>Hey!</Text>
         </ErrorBoundary>
       )
 
-      expect(wrapper).toMatchSnapshot()
+      expect(screen).toMatchInlineSnapshot(`
+        <Text>
+          Hey!
+        </Text>
+      `)
     })
   })
 
   describe('when there is an error', () => {
     describe('when FallbackComponent is not defined as a prop', () => {
       it('should catch the error and render the default FallbackComponent', () => {
-        const wrapper = renderer.create(
+        const screen = render(
           <ErrorBoundary>
-            <ComponentWithError error={errorMock} />
+            <ComponentWithError />
           </ErrorBoundary>
         )
 
-        expect(wrapper).toMatchSnapshot()
+        expect(screen).toMatchSnapshot()
       })
     })
 
     describe('when FallbackComponent is defined as a prop', () => {
       it('should catch the error and render the props.FallbackComponent', () => {
-        const FallbackComponent = () => <Text>Error!</Text>
-        const wrapper = renderer.create(
-          <ErrorBoundary FallbackComponent={FallbackComponent}>
-            <ComponentWithError error={errorMock} />
+        const fallbackComponent = 'FallbackComponent'
+
+        render(
+          <ErrorBoundary
+            FallbackComponent={() => <Text>{fallbackComponent}</Text>}
+          >
+            <ComponentWithError />
           </ErrorBoundary>
         )
 
-        expect(wrapper).toMatchSnapshot()
+        expect(screen.getByText(fallbackComponent)).toBeOnTheScreen()
       })
     })
 
@@ -73,9 +79,9 @@ describe('ErrorBoundary', () => {
       it('should catch the error and call props.onError', () => {
         const onError = jest.fn()
 
-        renderer.create(
+        render(
           <ErrorBoundary onError={onError}>
-            <ComponentWithError error={errorMock} />
+            <ComponentWithError />
           </ErrorBoundary>
         )
 
@@ -88,18 +94,21 @@ describe('ErrorBoundary', () => {
 
     describe('when FallbackComponent resetError prop is called', () => {
       it('should clear the error state', () => {
-        const wrapper = renderer.create(
-          <ErrorBoundary>
-            <Text>No errors!</Text>
-          </ErrorBoundary>
-        )
+        const { rerender } = render(<ComponentWithError />, {
+          wrapper: ErrorBoundary,
+        })
 
-        const instance = wrapper.getInstance() as ReactTestInstance['instance']
+        const tryAgainButton = screen.getByText('Try again')
+        const children = 'Children'
 
-        instance.setState({ error: errorMock })
-        instance.resetError()
+        expect(tryAgainButton).toBeOnTheScreen()
 
-        expect(instance.state.error).toBeNull()
+        rerender(<Text>{children}</Text>)
+
+        fireEvent.press(tryAgainButton)
+
+        expect(screen.getByText(children)).toBeOnTheScreen()
+        expect(tryAgainButton).not.toBeOnTheScreen()
       })
     })
   })
