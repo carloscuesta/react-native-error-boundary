@@ -30,6 +30,9 @@
     "reporters": [
       "default",
       "github-actions"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   },
   "repository": {
