@@ -30,6 +30,9 @@
     "reporters": [
       "default",
       "github-actions"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   },
   "repository": {
@@ -66,6 +69,8 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.18.2",
+    "@testing-library/jest-native": "5.4.1",
+    "@testing-library/react-native": "11.5.2",
     "@types/jest": "^29.4.0",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
