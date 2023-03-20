@@ -1,6 +1,6 @@
 {
   "name": "react-native-error-boundary",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A simple and reusable React-Native error boundary component",
   "main": "lib/index.js",
   "files": [
