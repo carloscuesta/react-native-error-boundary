@@ -8,7 +8,6 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
     "jsx": "react-native",
     "lib": ["esnext"],
     "module": "esnext",
