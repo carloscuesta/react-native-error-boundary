@@ -1,6 +1,8 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext')
+const themes = require('prism-react-renderer').themes
 const { npm2yarn2pnpm } = require('@sapphire/docusaurus-plugin-npm2yarn2pnpm')
+
+const lightCodeTheme = themes.github
+const darkCodeTheme = themes.dracula
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
