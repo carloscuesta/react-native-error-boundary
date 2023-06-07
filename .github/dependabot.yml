@@ -1,21 +1,27 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/"
+    directory: '/'
     schedule:
       interval: weekly
-      time: "04:00"
+      time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
+    allow:
+      - dependency-name: '*'
+        dependency-type: direct
   - package-ecosystem: npm
-    directory: "/docs"
+    directory: '/docs'
     schedule:
       interval: weekly
-      time: "04:00"
+      time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
-  - package-ecosystem: "github-actions"
-    directory: "/"
+    allow:
+      - dependency-name: '*'
+        dependency-type: direct
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
       interval: monthly
-      time: "04:00"
+      time: '04:00'
