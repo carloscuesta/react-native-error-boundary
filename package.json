@@ -88,7 +88,7 @@
     "metro-babel-register": "^0.76.7",
     "prettier": "^2.8.8",
     "react": "^18.0.0",
-    "react-native": "^0.71.11",
+    "react-native": "^0.72.0",
     "react-test-renderer": "^18.0.0",
     "typescript": "^5.1.3"
   },
