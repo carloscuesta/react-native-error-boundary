@@ -35,7 +35,7 @@ describe('ErrorBoundary', () => {
       const screen = render(
         <ErrorBoundary>
           <Text>Hey!</Text>
-        </ErrorBoundary>
+        </ErrorBoundary>,
       )
 
       expect(screen).toMatchInlineSnapshot(`
@@ -52,7 +52,7 @@ describe('ErrorBoundary', () => {
         const screen = render(
           <ErrorBoundary>
             <ComponentWithError />
-          </ErrorBoundary>
+          </ErrorBoundary>,
         )
 
         expect(screen).toMatchSnapshot()
@@ -68,7 +68,7 @@ describe('ErrorBoundary', () => {
             FallbackComponent={() => <Text>{fallbackComponent}</Text>}
           >
             <ComponentWithError />
-          </ErrorBoundary>
+          </ErrorBoundary>,
         )
 
         expect(screen.getByText(fallbackComponent)).toBeOnTheScreen()
@@ -82,12 +82,12 @@ describe('ErrorBoundary', () => {
         render(
           <ErrorBoundary onError={onError}>
             <ComponentWithError />
-          </ErrorBoundary>
+          </ErrorBoundary>,
         )
 
         expect(onError).toHaveBeenCalledWith(
           expect.any(Error),
-          expect.any(String)
+          expect.any(String),
         )
       })
     })
