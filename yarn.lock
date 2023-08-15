@@ -5614,10 +5614,10 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-metro-babel-register@^0.77.0:
-  version "0.77.0"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.77.0.tgz#c0bb14cb168fc7829f01d922be9332e1a3ffc816"
-  integrity sha512-VxSWJBJWp5yPQJjhBljl9lEygmDmN4vWReY/vXjN6A5MxJDwPAQ9gwR9diuNLAzvRRLhvI0jm5aAxS6vNpuWow==
+metro-babel-register@^0.78.0:
+  version "0.78.0"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.78.0.tgz#148c4b3b520d877c4a05651f592788a0476c118e"
+  integrity sha512-sw3YIL1GCAqlfyfiFavwPG0pw9dra3Qh4T+INsUFN6SnsA5StOqnM2MQo7VAA/9cjgQh7aONbALnDoyl02Pd4g==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/plugin-transform-flow-strip-types" "^7.20.0"
