@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: '/'
     schedule:
-      interval: weekly
+      interval: monthly
       time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
@@ -13,7 +13,7 @@ updates:
   - package-ecosystem: npm
     directory: '/docs'
     schedule:
-      interval: weekly
+      interval: monthly
       time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
