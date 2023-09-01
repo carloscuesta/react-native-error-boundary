@@ -90,7 +90,7 @@
     "react": "^18.0.0",
     "react-native": "^0.72.4",
     "react-test-renderer": "^18.0.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
