@@ -2152,12 +2152,14 @@
     pretty-format "^29.0.3"
     redent "^3.0.0"
 
-"@testing-library/react-native@12.2.2":
-  version "12.2.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.2.2.tgz#4b2275d5d1feb689c9b1e5cd9cb03ffe32a43228"
-  integrity sha512-aLr7YQ6pyn8PbLmdbtADG2aKcmarTLI7VhgWNVzJLxQHOtsDxLpJGKMSw10j406BE/GyGHbB0Gln3Of8/2TjnA==
+"@testing-library/react-native@12.3.0":
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.3.0.tgz#ebf04dddb7e1c34c869b97b187ecd061211c9466"
+  integrity sha512-E2Prl8D/ey9sRgzLyfCPPmqvsevJW5tVUy4E/pBbO7nOP6OzI/jn2P3vctn/kFdkPY2aE/udlU5ZeNAben9U2A==
   dependencies:
-    pretty-format "^29.0.0"
+    jest-matcher-utils "^29.6.2"
+    pretty-format "^29.6.2"
+    redent "^3.0.0"
 
 "@tootallnate/once@1":
   version "1.0.0"
@@ -4924,6 +4926,16 @@ jest-diff@^29.0.1, jest-diff@^29.6.4:
     jest-get-type "^29.6.3"
     pretty-format "^29.6.3"
 
+jest-diff@^29.7.0:
+  version "29.7.0"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-29.7.0.tgz#017934a66ebb7ecf6f205e84699be10afd70458a"
+  integrity sha512-LMIgiIrhigmPrs03JHpxUh2yISK3vLFPkAodPeo0+BuF7wA2FoQbkEg1u8gBYBThncu7e1oEDUfIXVuTqLRUjw==
+  dependencies:
+    chalk "^4.0.0"
+    diff-sequences "^29.6.3"
+    jest-get-type "^29.6.3"
+    pretty-format "^29.7.0"
+
 jest-docblock@^29.6.3:
   version "29.6.3"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-29.6.3.tgz#293dca5188846c9f7c0c2b1bb33e5b11f21645f2"
@@ -4991,15 +5003,15 @@ jest-leak-detector@^29.6.3:
     jest-get-type "^29.6.3"
     pretty-format "^29.6.3"
 
-jest-matcher-utils@^29.0.1, jest-matcher-utils@^29.6.4:
-  version "29.6.4"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-29.6.4.tgz#327db7ababea49455df3b23e5d6109fe0c709d24"
-  integrity sha512-KSzwyzGvK4HcfnserYqJHYi7sZVqdREJ9DMPAKVbS98JsIAvumihaNUbjrWw0St7p9IY7A9UskCW5MYlGmBQFQ==
+jest-matcher-utils@^29.0.1, jest-matcher-utils@^29.6.2, jest-matcher-utils@^29.6.4:
+  version "29.7.0"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-29.7.0.tgz#ae8fec79ff249fd592ce80e3ee474e83a6c44f12"
+  integrity sha512-sBkD+Xi9DtcChsI3L3u0+N0opgPYnCRPtGcQYrgXmR+hmt/fYfWAL0xRXYU8eWOdfuLgBe0YCW3AFtnRLagq/g==
   dependencies:
     chalk "^4.0.0"
-    jest-diff "^29.6.4"
+    jest-diff "^29.7.0"
     jest-get-type "^29.6.3"
-    pretty-format "^29.6.3"
+    pretty-format "^29.7.0"
 
 jest-message-util@^29.6.3:
   version "29.6.3"
@@ -6385,10 +6397,10 @@ pretty-format@^26.5.2, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-format@^29.0.0, pretty-format@^29.0.3, pretty-format@^29.5.0, pretty-format@^29.6.3:
-  version "29.6.3"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.6.3.tgz#d432bb4f1ca6f9463410c3fb25a0ba88e594ace7"
-  integrity sha512-ZsBgjVhFAj5KeK+nHfF1305/By3lechHQSMWCTl8iHSbfOm2TN5nHEtFc/+W7fAyUeCs2n5iow72gld4gW0xDw==
+pretty-format@^29.0.0, pretty-format@^29.0.3, pretty-format@^29.5.0, pretty-format@^29.6.2, pretty-format@^29.6.3, pretty-format@^29.7.0:
+  version "29.7.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.7.0.tgz#ca42c758310f365bfa71a0bda0a807160b776812"
+  integrity sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==
   dependencies:
     "@jest/schemas" "^29.6.3"
     ansi-styles "^5.0.0"
