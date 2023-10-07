@@ -19,7 +19,7 @@
     "@mdx-js/react": "^1.6.22",
     "@sapphire/docusaurus-plugin-npm2yarn2pnpm": "^1.2.0",
     "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.0.6",
+    "prism-react-renderer": "^2.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
