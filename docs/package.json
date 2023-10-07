@@ -17,7 +17,7 @@
     "@docusaurus/core": "2.4.3",
     "@docusaurus/preset-classic": "2.4.1",
     "@mdx-js/react": "^1.6.22",
-    "@sapphire/docusaurus-plugin-npm2yarn2pnpm": "^1.1.5",
+    "@sapphire/docusaurus-plugin-npm2yarn2pnpm": "^1.2.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.0.6",
     "react": "^17.0.2",
