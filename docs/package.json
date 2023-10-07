@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "2.4.3",
-    "@docusaurus/preset-classic": "2.4.1",
+    "@docusaurus/preset-classic": "2.4.3",
     "@mdx-js/react": "^1.6.22",
     "@sapphire/docusaurus-plugin-npm2yarn2pnpm": "^1.2.0",
     "clsx": "^2.0.0",
