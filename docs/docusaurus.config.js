@@ -1,5 +1,7 @@
 const themes = require('prism-react-renderer').themes
-const { npm2yarn2pnpm } = require('@sapphire/docusaurus-plugin-npm2yarn2pnpm')
+const {
+  convertNpmToPackageManagers,
+} = require('@sapphire/docusaurus-plugin-npm2yarn2pnpm')
 
 const lightCodeTheme = themes.github
 const darkCodeTheme = themes.dracula
@@ -27,7 +29,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/carloscuesta/react-native-error-boundary/tree/master/docs/',
-          remarkPlugins: [npm2yarn2pnpm],
+          remarkPlugins: [convertNpmToPackageManagers],
         },
         blog: false,
         theme: { customCss: require.resolve('./src/theme/theme.css') },
