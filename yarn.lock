@@ -2790,12 +2790,12 @@ babel-plugin-replace-ts-export-assignment@^0.0.2:
   resolved "https://registry.yarnpkg.com/babel-plugin-replace-ts-export-assignment/-/babel-plugin-replace-ts-export-assignment-0.0.2.tgz#927a30ba303fcf271108980a8d4f80a693e1d53f"
   integrity sha512-BiTEG2Ro+O1spuheL5nB289y37FFmz0ISE6GjpNCG2JuA/WNcuEHSYw01+vN8quGf208sID3FnZFDwVyqX18YQ==
 
-babel-plugin-syntax-hermes-parser@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-hermes-parser/-/babel-plugin-syntax-hermes-parser-0.17.0.tgz#1bc9feb6a25ed5ae97917a4afc15e7e391f55a0e"
-  integrity sha512-sYdVKubF925dghmVgfsxjNDDsYdzbqmLZZm+mO7ZxSgOgpO5ws4tpvc7UlzOTj7Yoc1kaNLNgm4Ebi491hsF1w==
+babel-plugin-syntax-hermes-parser@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-hermes-parser/-/babel-plugin-syntax-hermes-parser-0.17.1.tgz#7c2eaa257d2a7ba01fcccd7410a5ce7e1a4c1c10"
+  integrity sha512-I+BUmPsjlhM2OvFDTSLId457eOslfxmi4fxt5svoczarKi8y8LEH53VG24PTI8dfmiISrz1nc/tG4sqcv1tIGA==
   dependencies:
-    hermes-parser "0.17.0"
+    hermes-parser "0.17.1"
 
 babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -4489,10 +4489,10 @@ hermes-estree@0.12.0:
   resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.12.0.tgz#8a289f9aee854854422345e6995a48613bac2ca8"
   integrity sha512-+e8xR6SCen0wyAKrMT3UD0ZCCLymKhRgjEB5sS28rKiFir/fXgLoeRilRUssFCILmGHb+OvHDUlhxs0+IEyvQw==
 
-hermes-estree@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.17.0.tgz#4b1b0d8131826178f0af79a317ceaca3723e9012"
-  integrity sha512-bW9+bMZqnro+0+l6dUqTJW0VaNUvs4HRHh/J7VotTGnMmhBFRIcJz6ZxrRE7xIXmK7S5bJE9qrEooSiig4N70g==
+hermes-estree@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.17.1.tgz#902806a900c185720424ffcf958027821d23c051"
+  integrity sha512-EdUJms+eRE40OQxysFlPr1mPpvUbbMi7uDAKlScBw8o3tQY22BZ5yx56OYyp1bVaBm+7Cjc3NQz24sJEFXkPxg==
 
 hermes-parser@0.12.0:
   version "0.12.0"
@@ -4501,12 +4501,12 @@ hermes-parser@0.12.0:
   dependencies:
     hermes-estree "0.12.0"
 
-hermes-parser@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.17.0.tgz#722bb8079b9081a0de4902b770d5d45dbeb380bd"
-  integrity sha512-2fmppmZheY1UU071EMKAzXfuUCiDXF3fmzKLuN1XmE3+njIFs3CAeKP88+FtNBUpS6pEMJv6lPXCaJGqGsrURQ==
+hermes-parser@0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.17.1.tgz#8b5cbaff235fed28487812ad718f9c7182d0db0f"
+  integrity sha512-yErtFLMEL6490fFJPurNn23OI2ciGAtaUfKUg9VPdcde9CmItCjOVQkJt1Xzawv5kuRzeIx0RE2E2Q9TbIgdzA==
   dependencies:
-    hermes-estree "0.17.0"
+    hermes-estree "0.17.1"
 
 hermes-profile-transformer@^0.0.6:
   version "0.0.6"
@@ -5740,10 +5740,10 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-metro-babel-register@^0.80.0:
-  version "0.80.0"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.0.tgz#13113b36f772c2cc9740968368421cc294ab27e6"
-  integrity sha512-pxCNNS/PQ2Y6P9+Rhg9P3Gp7N8neuesNNgDneWkcz3LM1u6fxjhcKtNGPc+hX9Q4pRThJ24lB6/hv5PpnTtR+w==
+metro-babel-register@^0.80.1:
+  version "0.80.1"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.1.tgz#3729565f8c96d6d4e497ceec4f582f872e50f168"
+  integrity sha512-890TGEbg+rqVE+aXqrD9MQA3FvVbV345EQTI0rlo8IIcBLI+yog8L4NU7vhDSkGevQEtarSz/A+/zq5eZORBPw==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
@@ -5752,7 +5752,7 @@ metro-babel-register@^0.80.0:
     "@babel/preset-typescript" "^7.18.0"
     "@babel/register" "^7.0.0"
     babel-plugin-replace-ts-export-assignment "^0.0.2"
-    babel-plugin-syntax-hermes-parser "0.17.0"
+    babel-plugin-syntax-hermes-parser "0.17.1"
     babel-plugin-transform-flow-enums "^0.0.2"
     escape-string-regexp "^1.0.5"
 
