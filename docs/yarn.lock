@@ -1416,13 +1416,13 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@5.5.2"
 
-"@docusaurus/module-type-aliases@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.0.0.tgz#9a7dd323bb87ca666eb4b0b4b90d04425f2e05d6"
-  integrity sha512-CfC6CgN4u/ce+2+L1JdsHNyBd8yYjl4De2B2CBj2a9F7WuJ5RjV1ciuU7KDg8uyju+NRVllRgvJvxVUjCdkPiw==
+"@docusaurus/module-type-aliases@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.0.1.tgz#d45990fe377d7ffaa68841cf89401188a5d65293"
+  integrity sha512-DEHpeqUDsLynl3AhQQiO7AbC7/z/lBra34jTcdYuvp9eGm01pfH1wTVq8YqWZq6Jyx0BgcVl/VJqtE9StRd9Ag==
   dependencies:
     "@docusaurus/react-loadable" "5.5.2"
-    "@docusaurus/types" "3.0.0"
+    "@docusaurus/types" "3.0.1"
     "@types/history" "^4.7.11"
     "@types/react" "*"
     "@types/react-router-config" "*"
@@ -1669,10 +1669,10 @@
     webpack "^5.73.0"
     webpack-merge "^5.8.0"
 
-"@docusaurus/types@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.0.0.tgz#3edabe43f70b45f81a48f3470d6a73a2eba41945"
-  integrity sha512-Qb+l/hmCOVemReuzvvcFdk84bUmUFyD0Zi81y651ie3VwMrXqC7C0E7yZLKMOsLj/vkqsxHbtkAuYMI89YzNzg==
+"@docusaurus/types@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.0.1.tgz#4fe306aa10ef7c97dbc07588864f6676a40f3b6f"
+  integrity sha512-plyX2iU1tcUsF46uQ01pAd4JhexR7n0iiQ5MSnBFX6M6NSJgDYdru/i1/YNPKOnQHBoXGLHv0dNT6OAlDWNjrg==
   dependencies:
     "@types/history" "^4.7.11"
     "@types/react" "*"
