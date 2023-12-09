@@ -7,27 +7,27 @@ jobs:
   npm-publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: '16'
-    - name: Install dependencies 📦
-      run: yarn
-    - name: Build 👷‍♂️
-      run: yarn run build
-    - name: Publish package to NPM 🚀
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
-      run: |
-        npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-        npm publish
-    - name: Get branch names 🌳
-      id: branch-name
-      uses: tj-actions/branch-names@v7
-      with:
-        strip_tag_prefix: 'v'
-    - name: Publish GitHub Release 📝
-      uses: softprops/action-gh-release@v1
-      with:
-        name: ${{steps.branch-name.outputs.tag}}
-        generate_release_notes: true
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+      - name: Install dependencies 📦
+        run: yarn
+      - name: Build 👷‍♂️
+        run: yarn run build
+      - name: Publish package to NPM 🚀
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
+        run: |
+          npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+          npm publish
+      - name: Get branch names 🌳
+        id: branch-name
+        uses: tj-actions/branch-names@v7
+        with:
+          strip_tag_prefix: 'v'
+      - name: Publish GitHub Release 📝
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{steps.branch-name.outputs.tag}}
+          generate_release_notes: true
