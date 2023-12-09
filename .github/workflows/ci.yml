@@ -1,28 +1,24 @@
 name: CI
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 jobs:
   ci:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
     steps:
-    - uses: actions/checkout@v4
-    - name: Install Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies 📦
-      run: yarn
-    - name: Lint 🎨
-      run: yarn run lint
-    - name: Type check 🏷
-      run: yarn run typecheck
-    - name: Tests ✅
-      run: yarn run test
-    - name: Upload coverage 📈
-      run: yarn run coverage:upload
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+      - name: Install dependencies 📦
+        run: yarn
+      - name: Lint 🎨
+        run: yarn run lint
+      - name: Type check 🏷
+        run: yarn run typecheck
+      - name: Tests ✅
+        run: yarn run test
+      - name: Upload coverage 📈
+        run: yarn run coverage:upload
