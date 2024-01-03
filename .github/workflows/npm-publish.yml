@@ -23,7 +23,7 @@ jobs:
           npm publish
       - name: Get branch names 🌳
         id: branch-name
-        uses: tj-actions/branch-names@v7
+        uses: tj-actions/branch-names@v8
         with:
           strip_tag_prefix: 'v'
       - name: Publish GitHub Release 📝
