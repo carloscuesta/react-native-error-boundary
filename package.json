@@ -69,6 +69,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.7",
+    "@react-native/babel-preset": "0.74.0",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "12.4.3",
     "@types/jest": "^29.5.11",
@@ -88,7 +89,7 @@
     "metro-babel-register": "^0.80.2",
     "prettier": "^3.1.1",
     "react": "^18.0.0",
-    "react-native": "^0.72.7",
+    "react-native": "^0.73.1",
     "react-test-renderer": "^18.0.0",
     "typescript": "^5.3.3"
   },
