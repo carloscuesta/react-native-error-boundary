@@ -1875,10 +1875,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@sapphire/docusaurus-plugin-npm2yarn2pnpm@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/docusaurus-plugin-npm2yarn2pnpm/-/docusaurus-plugin-npm2yarn2pnpm-2.0.1.tgz#3d5112604abdaab8f5a6d8b6cd18862d549552c8"
-  integrity sha512-l0WzucJoNl2ZE8oCAR5cR1v3ZA1zzXAqfkG28ODLMvDw2cBa7MApScaayRQ5FjwYiu6Bz6XIH//ltfTrSMg3xg==
+"@sapphire/docusaurus-plugin-npm2yarn2pnpm@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/docusaurus-plugin-npm2yarn2pnpm/-/docusaurus-plugin-npm2yarn2pnpm-2.0.2.tgz#8bdef502dd01cac2894a1bd0d6c3c1d6a4aabb56"
+  integrity sha512-hJ8t9mWuCTppMfC3PC6mMbRVPVqEqA1Tthz2ImoIwM5Xd53Hv9pOaAhTYFsMm10J/zOJYU7933iwG2WnkguOWg==
   dependencies:
     mdast-util-mdx "^3.0.0"
     unified "^11.0.4"
