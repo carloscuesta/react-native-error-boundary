@@ -27,7 +27,7 @@ jobs:
         with:
           strip_tag_prefix: 'v'
       - name: Publish GitHub Release 📝
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: ${{steps.branch-name.outputs.tag}}
           generate_release_notes: true
