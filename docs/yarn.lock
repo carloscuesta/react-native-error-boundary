@@ -1434,20 +1434,6 @@
     vfile "^6.0.1"
     webpack "^5.88.1"
 
-"@docusaurus/module-type-aliases@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.1.1.tgz#b304402b0535a13ebd4c0db1c368d2604d54d02f"
-  integrity sha512-xBJyx0TMfAfVZ9ZeIOb1awdXgR4YJMocIEzTps91rq+hJDFJgJaylDtmoRhUxkwuYmNK1GJpW95b7DLztSBJ3A==
-  dependencies:
-    "@docusaurus/react-loadable" "5.5.2"
-    "@docusaurus/types" "3.1.1"
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    "@types/react-router-config" "*"
-    "@types/react-router-dom" "*"
-    react-helmet-async "*"
-    react-loadable "npm:@docusaurus/react-loadable@5.5.2"
-
 "@docusaurus/module-type-aliases@3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.2.0.tgz#ef883d8418f37e551eca72adc409014e720786d4"
@@ -1687,21 +1673,6 @@
   dependencies:
     fs-extra "^11.1.1"
     tslib "^2.6.0"
-
-"@docusaurus/types@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.1.1.tgz#747c9dee8cf7c3b0e5ee7351bac5e9c4fdc7f259"
-  integrity sha512-grBqOLnubUecgKFXN9q3uit2HFbCxTWX4Fam3ZFbMN0sWX9wOcDoA7lwdX/8AmeL20Oc4kQvWVgNrsT8bKRvzg==
-  dependencies:
-    "@mdx-js/mdx" "^3.0.0"
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    commander "^5.1.0"
-    joi "^17.9.2"
-    react-helmet-async "^1.3.0"
-    utility-types "^3.10.0"
-    webpack "^5.88.1"
-    webpack-merge "^5.9.0"
 
 "@docusaurus/types@3.2.0":
   version "3.2.0"
@@ -2347,16 +2318,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-router-config@*":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@types/react-router-config/-/react-router-config-5.0.6.tgz#87c5c57e72d241db900d9734512c50ccec062451"
-  integrity sha512-db1mx37a1EJDf1XeX8jJN7R3PZABmJQXR8r28yUjVMFSjkmnQo6X6pOEEmNl+Tp2gYQOGPdYbFIipBtdElZ3Yg==
-  dependencies:
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    "@types/react-router" "*"
-
-"@types/react-router-config@^5.0.7":
+"@types/react-router-config@*", "@types/react-router-config@^5.0.7":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-router-config/-/react-router-config-5.0.11.tgz#2761a23acc7905a66a94419ee40294a65aaa483a"
   integrity sha512-WmSAg7WgqW7m4x8Mt4N6ZyKz0BubSj/2tVUMsAHp+Yd2AMwcSbeFq9WympT19p5heCFmF97R9eD5uUR/t4HEqw==
