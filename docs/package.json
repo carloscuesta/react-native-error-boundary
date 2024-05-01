@@ -14,7 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "3.2.0",
+    "@docusaurus/core": "3.2.1",
     "@docusaurus/preset-classic": "3.2.0",
     "@mdx-js/react": "3.0.1",
     "@sapphire/docusaurus-plugin-npm2yarn2pnpm": "^2.0.2",
