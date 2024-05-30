@@ -5,7 +5,7 @@
 [![Npm Version](https://img.shields.io/npm/v/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 [![Npm Downloads](https://img.shields.io/npm/dt/react-native-error-boundary.svg?style=flat-square)](https://www.npmjs.com/package/react-native-error-boundary)
 
-> A simple and reusable React-Native [error boundary](https://reactjs.org/docs/error-boundaries.html#introducing-error-boundaries) component 🐛
+> A simple and reusable React-Native [error boundary](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary) component 🐛
 
 ## Install
 
