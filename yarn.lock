@@ -5917,10 +5917,10 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-metro-babel-register@^0.80.8:
-  version "0.80.8"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.8.tgz#5791f8175edb0dda63c1d954e5df0bc1b49c0bd8"
-  integrity sha512-4VN/9XmfrloeyBR5M/TpXYGwIQiIVVOX19fOghz5ssWqJfuJjeqTn4Izc9bvUdhk8+mS0G08yPNMj50lOJlMVg==
+metro-babel-register@^0.80.9:
+  version "0.80.9"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.9.tgz#1868a80224f4b9b511a44b14229e1cd9dc331f13"
+  integrity sha512-8sLnBX4AuTwA8kYs7XX8HS4CK3A7kzME1hjbzDto+q9hS9H10x7SxjVzCnCfIlw6bNRn7ob5aClAEPALo4oNFA==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
