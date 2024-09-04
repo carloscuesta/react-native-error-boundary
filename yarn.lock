@@ -2905,12 +2905,12 @@ babel-plugin-replace-ts-export-assignment@^0.0.2:
   resolved "https://registry.yarnpkg.com/babel-plugin-replace-ts-export-assignment/-/babel-plugin-replace-ts-export-assignment-0.0.2.tgz#927a30ba303fcf271108980a8d4f80a693e1d53f"
   integrity sha512-BiTEG2Ro+O1spuheL5nB289y37FFmz0ISE6GjpNCG2JuA/WNcuEHSYw01+vN8quGf208sID3FnZFDwVyqX18YQ==
 
-babel-plugin-syntax-hermes-parser@0.20.1:
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-hermes-parser/-/babel-plugin-syntax-hermes-parser-0.20.1.tgz#c7aac5d1d421a2dff8e6d125d93f7de40803be5d"
-  integrity sha512-fTP6P0NV+0PrJLUQZSjAe7G4D/WvD2/Q38dNEsuBr9c6FUJ82VggApUQx6l3HnkvDtr5zHbNcJUIplGqumQ+Hg==
+babel-plugin-syntax-hermes-parser@0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-hermes-parser/-/babel-plugin-syntax-hermes-parser-0.23.0.tgz#44af4861b3a7761836275bdf375eca12b0f5ccfa"
+  integrity sha512-JRapv0rcV8n34ZXDzoOPiCg2Q9JJzfklF9Yar+v7gjBuQoXN8mma50E5utjWQTQi//wT9Qcem5mIx5maob5cqA==
   dependencies:
-    hermes-parser "0.20.1"
+    hermes-parser "0.23.0"
 
 babel-plugin-transform-flow-enums@^0.0.2:
   version "0.0.2"
@@ -4645,15 +4645,15 @@ hermes-estree@0.18.2:
   resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.18.2.tgz#fd450fa1659cf074ceaa2ddeeb21674f3b2342f3"
   integrity sha512-KoLsoWXJ5o81nit1wSyEZnWUGy9cBna9iYMZBR7skKh7okYAYKqQ9/OczwpMHn/cH0hKDyblulGsJ7FknlfVxQ==
 
-hermes-estree@0.20.1:
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.20.1.tgz#0b9a544cf883a779a8e1444b915fa365bef7f72d"
-  integrity sha512-SQpZK4BzR48kuOg0v4pb3EAGNclzIlqMj3Opu/mu7bbAoFw6oig6cEt/RAi0zTFW/iW6Iz9X9ggGuZTAZ/yZHg==
-
 hermes-estree@0.22.0:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.22.0.tgz#38559502b119f728901d2cfe2ef422f277802a1d"
   integrity sha512-FLBt5X9OfA8BERUdc6aZS36Xz3rRuB0Y/mfocSADWEJfomc1xfene33GdyAmtTkKTBXTN/EgAy+rjTKkkZJHlw==
+
+hermes-estree@0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.23.0.tgz#89c5419877b9d6bce4bb616821f496f5c5daddbc"
+  integrity sha512-Rkp0PNLGpORw4ktsttkVbpYJbrYKS3hAnkxu8D9nvQi6LvSbuPa+tYw/t2u3Gjc35lYd/k95YkjqyTcN4zspag==
 
 hermes-parser@0.18.2:
   version "0.18.2"
@@ -4662,19 +4662,19 @@ hermes-parser@0.18.2:
   dependencies:
     hermes-estree "0.18.2"
 
-hermes-parser@0.20.1:
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.20.1.tgz#ad10597b99f718b91e283f81cbe636c50c3cff92"
-  integrity sha512-BL5P83cwCogI8D7rrDCgsFY0tdYUtmFP9XaXtl2IQjC+2Xo+4okjfXintlTxcIwl4qeGddEl28Z11kbVIw0aNA==
-  dependencies:
-    hermes-estree "0.20.1"
-
 hermes-parser@0.22.0:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.22.0.tgz#fc8e0e6c7bfa8db85b04c9f9544a102c4fcb4040"
   integrity sha512-gn5RfZiEXCsIWsFGsKiykekktUoh0PdFWYocXsUdZIyWSckT6UIyPcyyUIPSR3kpnELWeK3n3ztAse7Mat6PSA==
   dependencies:
     hermes-estree "0.22.0"
+
+hermes-parser@0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.23.0.tgz#3541907b77ca9e94fd093e8ef0ff97ca5340dee8"
+  integrity sha512-xLwM4ylfHGwrm+2qXfO1JT/fnqEDGSnpS/9hQ4VLtqTexSviu2ZpBgz07U8jVtndq67qdb/ps0qvaWDZ3fkTyg==
+  dependencies:
+    hermes-estree "0.23.0"
 
 html-escaper@^2.0.0:
   version "2.0.2"
@@ -5921,10 +5921,10 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-metro-babel-register@^0.80.9:
-  version "0.80.9"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.9.tgz#1868a80224f4b9b511a44b14229e1cd9dc331f13"
-  integrity sha512-8sLnBX4AuTwA8kYs7XX8HS4CK3A7kzME1hjbzDto+q9hS9H10x7SxjVzCnCfIlw6bNRn7ob5aClAEPALo4oNFA==
+metro-babel-register@^0.80.10:
+  version "0.80.10"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.10.tgz#b2ed3a001853aa75b9466f5d59c40b8979a53cc8"
+  integrity sha512-oH2kmW5VHncQwGfx4miq/nf9MTv7snxJD8G1cTYvRx9WaxVXZsxyxXjvbaUi2zsUzJjjfua428FIkAMLGyPvdg==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
@@ -5933,9 +5933,10 @@ metro-babel-register@^0.80.9:
     "@babel/preset-typescript" "^7.18.0"
     "@babel/register" "^7.0.0"
     babel-plugin-replace-ts-export-assignment "^0.0.2"
-    babel-plugin-syntax-hermes-parser "0.20.1"
+    babel-plugin-syntax-hermes-parser "0.23.0"
     babel-plugin-transform-flow-enums "^0.0.2"
     escape-string-regexp "^1.0.5"
+    flow-enums-runtime "^0.0.6"
 
 metro-babel-transformer@0.80.5:
   version "0.80.5"
