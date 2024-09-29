@@ -15,7 +15,6 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src && prettier --check ./src",
     "test": "jest",
-    "coverage:upload": "codecov",
     "prepare": "husky install"
   },
   "jest": {

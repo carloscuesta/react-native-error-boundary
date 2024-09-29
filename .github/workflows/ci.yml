@@ -21,4 +21,6 @@ jobs:
       - name: Tests ✅
         run: yarn run test
       - name: Upload coverage 📈
-        run: yarn run coverage:upload
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
