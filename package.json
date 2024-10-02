@@ -70,7 +70,7 @@
     "@babel/preset-env": "^7.25.4",
     "@react-native/babel-preset": "0.75.3",
     "@testing-library/jest-native": "5.4.3",
-    "@testing-library/react-native": "12.6.1",
+    "@testing-library/react-native": "12.7.2",
     "@types/jest": "^29.5.12",
     "@types/react-test-renderer": "^18.0.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
