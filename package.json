@@ -32,17 +32,7 @@
     ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
-    ],
-    "transform": {
-      "^.+\\.(js)$": [
-        "babel-jest",
-        {
-          "plugins": [
-            "babel-plugin-syntax-hermes-parser"
-          ]
-        }
-      ]
-    }
+    ]
   },
   "repository": {
     "type": "git",
@@ -78,7 +68,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
-    "@react-native/babel-preset": "0.75.3",
+    "@react-native/babel-preset": "0.76.1",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "12.8.1",
     "@types/jest": "^29.5.14",
