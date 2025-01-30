@@ -7,6 +7,11 @@ updates:
       time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
+    groups:
+      dependencies:
+        dependency-type: 'production'
+      devDependencies:
+        dependency-type: 'development'
     allow:
       - dependency-name: '*'
         dependency-type: direct
@@ -17,6 +22,11 @@ updates:
       time: '04:00'
     open-pull-requests-limit: 10
     versioning-strategy: increase
+    groups:
+      dependencies:
+        dependency-type: 'production'
+      devDependencies:
+        dependency-type: 'development'
     allow:
       - dependency-name: '*'
         dependency-type: direct
