@@ -17,23 +17,6 @@
     "test": "jest",
     "prepare": "husky install"
   },
-  "jest": {
-    "preset": "react-native",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.(ts|tsx)"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/lib"
-    ],
-    "reporters": [
-      "default",
-      "github-actions"
-    ],
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-native/extend-expect"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carloscuesta/react-native-error-boundary.git"
@@ -72,6 +55,7 @@
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "13.0.1",
     "@types/jest": "^29.5.14",
+    "@types/react": "19.0.8",
     "@types/react-test-renderer": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
@@ -89,6 +73,7 @@
     "react": "^19.0.0",
     "react-native": "^0.77.0",
     "react-test-renderer": "^19.0.0",
+    "ts-node": "10.9.2",
     "typescript": "^5.7.3"
   },
   "eslintConfig": {
@@ -135,5 +120,6 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  }
+  },
+  "packageManager": "pnpm@10.0.0"
 }

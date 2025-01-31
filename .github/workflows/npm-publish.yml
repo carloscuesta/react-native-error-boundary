@@ -10,11 +10,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
+          cache: 'pnpm'
           node-version-file: '.node-version'
       - name: Install dependencies 📦
-        run: yarn
+        run: pnpm install
       - name: Build 👷‍♂️
-        run: yarn run build
+        run: pnpm run build
       - name: Publish package to NPM 🚀
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
