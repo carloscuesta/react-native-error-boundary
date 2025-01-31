@@ -12,9 +12,9 @@ jobs:
         with:
           node-version-file: '.node-version'
       - name: Install dependencies 📦
-        run: yarn
+        run: pnpm install
       - name: Build 👷‍♂️
-        run: yarn run build
+        run: pnpm run build
       - name: Publish package to NPM 🚀
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}

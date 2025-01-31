@@ -13,13 +13,13 @@ jobs:
         with:
           node-version-file: '.node-version'
       - name: Install dependencies 📦
-        run: yarn
+        run: pnpm install
       - name: Lint 🎨
-        run: yarn run lint
+        run: pnpm run lint
       - name: Type check 🏷
-        run: yarn run typecheck
+        run: pnpm run typecheck
       - name: Tests ✅
-        run: yarn run test
+        run: pnpm run test
       - name: Upload coverage 📈
         uses: codecov/codecov-action@v5
         with:
