@@ -17,21 +17,6 @@
     "test": "jest",
     "prepare": "husky install"
   },
-  "jest": {
-    "preset": "react-native",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.(ts|tsx)"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/lib"
-    ],
-    "reporters": [
-      "default",
-      "github-actions"
-    ],
-    "transformIgnorePatterns": []
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carloscuesta/react-native-error-boundary.git"
@@ -87,6 +72,7 @@
     "react": "^19.0.0",
     "react-native": "^0.77.0",
     "react-test-renderer": "^19.0.0",
+    "ts-node": "10.9.2",
     "typescript": "^5.7.3"
   },
   "eslintConfig": {
