@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import { render, screen, fireEvent } from '@testing-library/react-native'
-import '@testing-library/jest-native'
 
 import moduleIndex from '../index'
 import ErrorBoundary from '../ErrorBoundary'
