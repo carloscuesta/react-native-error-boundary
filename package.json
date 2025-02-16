@@ -15,7 +15,10 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src && prettier --check ./src",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version:patch": "pnpm version patch -m \"🔖 %s\"",
+    "version:minor": "pnpm version minor -m \"🔖 %s\"",
+    "version:major": "pnpm version major -m \"🔖 %s\""
   },
   "repository": {
     "type": "git",
