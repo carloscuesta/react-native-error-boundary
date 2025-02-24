@@ -1,14 +1,13 @@
-import React, { type ComponentType, type ReactNode } from 'react'
+import React, { type ComponentType, type PropsWithChildren } from 'react'
 
 import FallbackComponent, {
   type Props as FallbackComponentProps,
 } from './FallbackComponent'
 
-export type Props = {
-  children: Exclude<NonNullable<ReactNode>, string | number | boolean>
+export type Props = PropsWithChildren<{
   FallbackComponent: ComponentType<FallbackComponentProps>
   onError?: (error: Error, stackTrace: string) => void
-}
+}>
 
 type State = { error: Error | null }
 
