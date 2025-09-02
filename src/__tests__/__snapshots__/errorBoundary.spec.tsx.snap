@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ErrorBoundary when there is an error when FallbackComponent is not defined as a prop should catch the error and render the default FallbackComponent 1`] = `
 <RCTSafeAreaView
