@@ -42,14 +42,8 @@
   },
   "homepage": "https://github.com/carloscuesta/react-native-error-boundary",
   "peerDependencies": {
-    "@types/react-native": ">=0.57.7",
     "react": ">=16.6.0",
-    "react-native": ">=0.57.7"
-  },
-  "peerDependenciesMeta": {
-    "@types/react-native": {
-      "optional": true
-    }
+    "react-native": ">=0.74.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
