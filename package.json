@@ -43,7 +43,8 @@
   "homepage": "https://github.com/carloscuesta/react-native-error-boundary",
   "peerDependencies": {
     "react": ">=16.6.0",
-    "react-native": ">=0.74.0"
+    "react-native": ">=0.74.0",
+    "react-native-safe-area-context": ">=5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
@@ -118,8 +119,5 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "packageManager": "pnpm@10.0.0",
-  "dependencies": {
-    "react-native-safe-area-context": "5.6.1"
-  }
+  "packageManager": "pnpm@10.0.0"
 }
