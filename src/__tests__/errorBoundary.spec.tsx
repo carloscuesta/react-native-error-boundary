@@ -5,6 +5,10 @@ import { render, screen, fireEvent } from '@testing-library/react-native'
 import moduleIndex from '../index'
 import ErrorBoundary from '../ErrorBoundary'
 
+jest.mock('react-native-safe-area-context', () => ({
+  SafeAreaView: ({ children }: { children: React.Children }) => children,
+}))
+
 describe('ErrorBoundary', () => {
   let consoleErrorSpy: jest.SpyInstance
 
