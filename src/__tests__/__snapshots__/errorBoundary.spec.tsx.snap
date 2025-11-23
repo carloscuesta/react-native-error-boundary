@@ -1,111 +1,93 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ErrorBoundary when there is an error when FallbackComponent is not defined as a prop should catch the error and render the default FallbackComponent 1`] = `
-<RNCSafeAreaView
-  edges={
-    {
-      "bottom": "additive",
-      "left": "additive",
-      "right": "additive",
-      "top": "additive",
-    }
-  }
+<View
   style={
     {
-      "backgroundColor": "#fafafa",
-      "flex": 1,
-      "justifyContent": "center",
+      "marginHorizontal": 16,
     }
   }
 >
-  <View
+  <Text
     style={
       {
-        "marginHorizontal": 16,
+        "color": "#000",
+        "fontSize": 48,
+        "fontWeight": "300",
+        "paddingBottom": 16,
+      }
+    }
+  >
+    Oops!
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#000",
+        "fontSize": 32,
+        "fontWeight": "800",
+      }
+    }
+  >
+    There's an error
+  </Text>
+  <Text
+    style={
+      {
+        "paddingVertical": 16,
+      }
+    }
+  >
+    Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "backgroundColor": "#2196f3",
+        "borderRadius": 50,
+        "opacity": 1,
+        "padding": 16,
       }
     }
   >
     <Text
       style={
         {
-          "color": "#000",
-          "fontSize": 48,
-          "fontWeight": "300",
-          "paddingBottom": 16,
+          "color": "#fff",
+          "fontWeight": "600",
+          "textAlign": "center",
         }
       }
     >
-      Oops!
+      Try again
     </Text>
-    <Text
-      style={
-        {
-          "color": "#000",
-          "fontSize": 32,
-          "fontWeight": "800",
-        }
-      }
-    >
-      There's an error
-    </Text>
-    <Text
-      style={
-        {
-          "paddingVertical": 16,
-        }
-      }
-    >
-      Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.
-    </Text>
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        {
-          "backgroundColor": "#2196f3",
-          "borderRadius": 50,
-          "opacity": 1,
-          "padding": 16,
-        }
-      }
-    >
-      <Text
-        style={
-          {
-            "color": "#fff",
-            "fontWeight": "600",
-            "textAlign": "center",
-          }
-        }
-      >
-        Try again
-      </Text>
-    </View>
   </View>
-</RNCSafeAreaView>
+</View>
 `;
