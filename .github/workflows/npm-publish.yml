@@ -20,8 +20,6 @@ jobs:
         run: pnpm install
       - name: Build 👷‍♂️
         run: pnpm run build
-      - name: Update npm 🔧
-        run: npm install -g npm@latest
       - name: Publish package to NPM 🚀
         run: npm publish
       - name: Get branch names 🌳
