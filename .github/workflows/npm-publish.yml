@@ -3,6 +3,9 @@ on:
   push:
     tags:
       - 'v*'
+permissions:
+  id-token: write
+  contents: read
 jobs:
   npm-publish:
     runs-on: ubuntu-latest
@@ -18,11 +21,7 @@ jobs:
       - name: Build 👷‍♂️
         run: pnpm run build
       - name: Publish package to NPM 🚀
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
-        run: |
-          npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-          npm publish
+        run: npm publish
       - name: Get branch names 🌳
         id: branch-name
         uses: tj-actions/branch-names@v9
