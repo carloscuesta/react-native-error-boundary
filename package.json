@@ -50,6 +50,7 @@
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.0",
     "@react-native/babel-preset": "0.84.1",
+    "@react-native/eslint-config": "0.84.1",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "13.3.3",
     "@types/jest": "^30.0.0",
@@ -73,43 +74,6 @@
     "react-test-renderer": "^19.2.4",
     "ts-node": "10.9.2",
     "typescript": "^5.9.3"
-  },
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "env": {
-      "jest": true,
-      "react-native/react-native": true
-    },
-    "plugins": [
-      "react",
-      "react-native",
-      "import",
-      "@typescript-eslint"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:import/errors",
-      "plugin:import/react-native",
-      "plugin:import/typescript"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": 12,
-      "sourceType": "module",
-      "requireConfigFile": false
-    },
-    "settings": {
-      "react": {
-        "version": "detect"
-      },
-      "import/ignore": [
-        "react-native"
-      ]
-    }
   },
   "prettier": {
     "semi": false,
