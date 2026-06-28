@@ -51,6 +51,7 @@
     "@babel/preset-env": "^7.29.7",
     "@react-native/babel-preset": "0.85.3",
     "@react-native/eslint-config": "0.85.3",
+    "@react-native/jest-preset": "0.85.3",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "13.3.3",
     "@types/jest": "^30.0.0",
@@ -83,5 +84,10 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "packageManager": "pnpm@10.0.0"
+  "packageManager": "pnpm@10.0.0",
+  "pnpm": {
+    "overrides": {
+      "jest-environment-node": "^30.4.1"
+    }
+  }
 }
