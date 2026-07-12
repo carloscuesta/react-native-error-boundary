@@ -34,14 +34,14 @@ describe('ErrorBoundary', () => {
   })
 
   describe('when there are no errors', () => {
-    it('should render the children', () => {
-      const screen = render(
+    it('should render the children', async () => {
+      const result = await render(
         <ErrorBoundary>
           <Text>Hey!</Text>
         </ErrorBoundary>,
       )
 
-      expect(screen).toMatchInlineSnapshot(`
+      expect(result).toMatchInlineSnapshot(`
         <Text>
           Hey!
         </Text>
@@ -51,22 +51,22 @@ describe('ErrorBoundary', () => {
 
   describe('when there is an error', () => {
     describe('when FallbackComponent is not defined as a prop', () => {
-      it('should catch the error and render the default FallbackComponent', () => {
-        const screen = render(
+      it('should catch the error and render the default FallbackComponent', async () => {
+        const result = await render(
           <ErrorBoundary>
             <ComponentWithError />
           </ErrorBoundary>,
         )
 
-        expect(screen).toMatchSnapshot()
+        expect(result).toMatchSnapshot()
       })
     })
 
     describe('when FallbackComponent is defined as a prop', () => {
-      it('should catch the error and render the props.FallbackComponent', () => {
+      it('should catch the error and render the props.FallbackComponent', async () => {
         const fallbackComponent = 'FallbackComponent'
 
-        render(
+        await render(
           <ErrorBoundary
             FallbackComponent={() => <Text>{fallbackComponent}</Text>}
           >
@@ -79,10 +79,10 @@ describe('ErrorBoundary', () => {
     })
 
     describe('when onError is defined as a prop', () => {
-      it('should catch the error and call props.onError', () => {
+      it('should catch the error and call props.onError', async () => {
         const onError = jest.fn()
 
-        render(
+        await render(
           <ErrorBoundary onError={onError}>
             <ComponentWithError />
           </ErrorBoundary>,
@@ -96,8 +96,8 @@ describe('ErrorBoundary', () => {
     })
 
     describe('when FallbackComponent resetError prop is called', () => {
-      it('should clear the error state', () => {
-        const { rerender } = render(<ComponentWithError />, {
+      it('should clear the error state', async () => {
+        const { rerender } = await render(<ComponentWithError />, {
           wrapper: ErrorBoundary,
         })
 
@@ -106,11 +106,11 @@ describe('ErrorBoundary', () => {
 
         expect(tryAgainButton).toBeOnTheScreen()
 
-        rerender(<Text>{children}</Text>)
+        await rerender(<Text>{children}</Text>)
 
         fireEvent.press(tryAgainButton)
 
-        expect(screen.getByText(children)).toBeOnTheScreen()
+        expect(await screen.findByText(children)).toBeOnTheScreen()
         expect(tryAgainButton).not.toBeOnTheScreen()
       })
     })
