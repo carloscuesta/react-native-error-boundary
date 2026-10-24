@@ -74,7 +74,7 @@
     "react-native": "^0.87.1",
     "react-test-renderer": "^19.3.0",
     "ts-node": "10.9.2",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
   },
   "prettier": {
     "semi": false,
